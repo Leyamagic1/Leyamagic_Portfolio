@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORFOLIO</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="script.js" defer></script> 
+</head>
+<body>
+    <button class="btn-mode" onclick="toggleDarkMode()">Light mode</button>
+    <ul class="pdf">
+        <li><a href="Documents/Curriculum Vitae/CV2.pdf" title="Curriculum" target="_blank"><strong class="trait2">Curriculum PDF</strong></a></li>
+    </ul>
+    <!-- Grid principal -->
+    <div id="slider" class="slider">
+        <div class="trail"></div>
+        <!-- Grid page 1 -->
+        <div class="page1">
+            <header class="header-page1">
+                <div class="header-container">
+                    <h1>Curriculum Vitae</h1>
+                </div>
+            </header>
+            <article class="article-page1">
+                <div class="article-container">
+                    <div class="info-container">
+                        <q class="titre-principal">Hello World !</q>
+                        <h2 class="titre-principal2">BUONOMO Léa</h2>
+                        <p class="paragraphe-principal">06.66.97.82.28<br>leabuonomo@hotmail.fr<br>67000 Strasbourg-France</p>  
+                    </div>
+                    <div class="info-container2">
+                        <p class="paragraphe-principal2">Sortant d&apos;une première expérience de plus de trois ans auprès d&apos;une entreprise à développement mondial, j&apos;ai su prouver ma motivation, ma productivité ainsi que mon sens de l&apos;autonomie et de l&apos;initiative. Actuellement en apprentissage autonome pour le développement Front End, je suis à la recherche d&apos;une opportunité pour une reconversion professionnelle</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <!-- Grid page 2 -->
+        <div class="page2">
+            <section class="section1-page2">
+                <div class="skills-container">
+                    <h1 class="titre-page2" id="titre-formations">Formations</h1>
+                    <div class="container-skills-columns">
+                        <div class="skills-code">
+                            <ul>
+                                <li class="list-purple">Developpement FrontEnd (en cours).</li>
+                                <li class="list-purple">DAO chez Digital Painting School.</li>
+                                <li class="list-purple">Accueil de public à mobilité réduite.</li>
+                            </ul>
+                        </div>
+                        <div class="skills-design">
+                            <ul>
+                                <li class="list-purple">Gestes de premiers secours de Niveau 1.</li>
+                                <li class="list-purple">Préventions et sécurité incendie.</li>
+                                <li class="list-purple">Utilisation des produits et leurs PH dans un cadre professionnel.</li>
+                            </ul>
+                        </div>
+                        <div class="skills-others">
+                            <ul>
+                                <li class="list-purple">Fondamenteaux en coaching sportif et nutritionnel.</li>
+                                <li class="list-purple">Diverses dans le cadre de mes fonctions en tant qu&apos;agent polyvalent.</li>
+                                <li class="list-purple">Général littéraire, Lycée Fustel de Coulanges à Strasbourg.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section2-page2">
+                <div class="skills-container" id="container-competences">
+                    <h1 class="titre-page2" id="titre-competences">Compétences</h1>
+                    <div class="container-skills-columns">
+                        <div class="skills-code">
+                            <ul>
+                                <li class="list-reg-purple">Maîtrise des logiciels Office et Adobe.</li>
+                                <li class="list-reg-purple">Prise poste et travail continu en autonomie.</li>
+                            </ul>
+                        </div>
+                        <div class="skills-design">
+                            <ul>
+                                <li class="list-reg-purple">Rédaction de compte rendu mensuel et formation des nouveaux agents.</li>
+                                <li class="list-reg-purple">Gestion de l&apos;accueil des clients, des plannings, des stocks, des livraisons, du service-client.</li>
+                            </ul>
+                        </div>
+                        <div class="skills-others">
+                            <ul>
+                                <li class="list-reg-purple">Entretien des équipements et des locaux en respect avec les règles liées à la COVID-19.</li>
+                                <li class="list-reg-purple">Veille permanente sur les installations électriques, sanitaires et températures pour la sécurité des usagers.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Grid page 3 -->
+        <div class="page3">
+            <section class="section1-page3">
+                <div class="skills-container" id="container-experiences">
+                    <h1 class="titre-page2" id="titre-experiences">Expériences</h1>
+                    <div class="container-skills-columns">
+                        <div class="skills-code">
+                            <ul>
+                                <li class="list-purple">Agent d&apos;accueil polyvalent chez Basic-Fit France depuis Juin 2020</li>
+                            </ul>
+                        </div>    
+                        <div class="skills-design">
+                            <ul> 
+                                <li class="list-purple">Stage de maintenance installation éléctrique et sanitaire, periode de chômage partiel.</li>
+                            </ul>  
+                        </div>
+                        <div class="skills-others">
+                            <ul> 
+                                <li class="list-purple">Participation à un évennement musical dans une association à but non lucrative.</li>
+                            </ul>  
+                        </div> 
+                    </div>
+                </div>
+            </section>
+            <footer class="footer-page3">
+                <div class="footer-container">
+                    <script>document.getElementById("current-year").textContent = new Date().getFullYear();</script>
+                    <p class="info-footer">&copy; Buonomo Léa all right deserved.<span class="info-footer" id="current-year"></span></p>
+                </div>
+            </footer>
+        </div>
+    <!-- Fin du Grid principal -->
+    </div>
+</body>
+</html>

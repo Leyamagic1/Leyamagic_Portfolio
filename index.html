@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORFOLIO</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="script.js" defer></script> 
+</head>
+<body>
+    <div class="fond"></div>
+    <div class="fond2"></div>
+    <button class="btn-mode" onclick="toggleDarkMode()">Light mode</button>
+    <!-- Grid principal -->
+    <div id="slider" class="slider">
+        <div class="trail"></div>
+        <!-- Grid page 1 -->
+        <div class="page1">
+            <header class="header-page1">
+                <div class="header-nav-container">
+                    <nav class="nav-container">
+                        <ul class="nav-ul">
+                            <li><a href="PageInConstructButton/index.html" title="Bonus" target="_blank"><strong class="trait1">Bonus</strong></a></li>
+                            <li><a href="Documents/Curriculum/Curriculum.html" title="Curriculum" target="_blank"><strong class="trait2">Curriculum</strong></a></li>
+                            <li><a href="Documents/Cover letter/Coverletter.html" title="Cover letter" target="_blank"><strong class="trait3">Cover Letter</strong></a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <article class="article-page1">
+                <div class="article-container">
+                    <div class="info-container">
+                        <h1 class="titre-principal">Hello !</h1>
+                        <h3 class="titre-principal2">Front End developer</h3>
+                        <p class="paragraphe-principal">Passionnée, motivée et curieuse de découvrir de nouvelles choses, je veux partager, développer et créer avec des personnes qui me feront progresser. Je souhaite aussi rendre le web plus propre et plus respectueux des utilisateurs.</p>  
+                    </div>
+                    <div class="liens-container">
+                        <ul class="liens-ul">
+                            <li><a href="mailto:leabuonomo@hotmail.fr" title="Mail" target="_blank">Email</a></li>
+                            <li><a href="https://www.linkedin.com/in/l%C3%A9a-b-179849208/" title="Private LinkedIn" target="_blank">LinkedIn</a></li>
+                            <li><a href="https://codepen.io/Leyamagic1" title="Code Pen" target="_blank">CodePen</a></li>
+                            <li><a href="https://github.com/Leyamagic1" title="GitHub" target="_blank">GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <!-- Grid page 2 -->
+        <div class="page2">
+            <section class="section1-page2">
+                <div class="skills-container">
+                    <h1 class="titre-page2">Compétences</h1>
+                    <div class="container-skills-columns">
+                        <div class="skills-code">
+                            <ul>
+                                <li class="list-dark-purple" title="Mastery">HTML</li>
+                                <li class="list-dark-purple" title="Mastery/intermediate">CSS</li>
+                                <li class="list-purple" title="Intermediate">JS</li>
+                            </ul>
+                        </div>
+                        <div class="skills-design">
+                            <ul>
+                                <li class="list-dark-purple" title="Mastery">Sketchbook Pro</li>
+                                <li class="list-purple" title="Intermediate">Illustrator</li>
+                                <li class="list-reg-purple" title="Beginner">Figma</li>
+                            </ul>
+                        </div>
+                        <div class="skills-others">
+                            <ul>
+                                <li class="list-purple" title="Intermediate">GitHub</li>
+                                <li class="list-reg-purple" title="Beginner">Nodes.js</li>
+                                <li class="list-reg-purple" title="Beginner">MongoDB</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section2-page2">
+                <div class="projects-container">
+                    <div class="projet">
+                        <img class="img-projet" src="img/UI Design WebShop.png" width="350px" height="200px" title="Première slider-x page" alt="projet 1">
+                        <a href="https://codepen.io/Leyamagic1/pen/ZENQLrB" title="Code source projet 1" target="_blank">Voir le code source</a>
+                        <q class="citation">HTML/CSS/JS</q>
+                    </div>
+                    <div class="projet">
+                        <img class="img-projet" src="img/Presentation Page.png" width="350px" height="200px" title="Premiere structure Grid Layout" alt="projet 2">
+                        <a href="https://codepen.io/Leyamagic1/pen/BaejpXy" title="Code source projet 2" target="_blank">Voir le code source</a>
+                        <q class="citation">HTML/CSS/JS</q>
+                    </div>
+                    <div class="projet">
+                        <img class="img-projet" src="img/jolie btn hover css.png" width="350px" height="200px" title="Idée de boutton:hover" alt="projet 3">
+                        <a href="https://codepen.io/Leyamagic1/pen/vYMYYzM" title="Code source projet 3" target="_blank">Voir le code source</a>
+                        <q class="citation">HTML/CSS</q>
+                    </div>
+                    <div class="projet">
+                        <img class="img-projet" src="img/Firsts Page SoundCloud darktheme.png" width="350px" height="200px" title="Premiere structure média queries" alt="projet 4">
+                        <a href="https://codepen.io/Leyamagic1/pen/LYoGWEg" title="Code source projet 4" target="_blank">Voir le code source</a>
+                        <q class="citation">HTML/CSS</Q>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- Grid page 3 -->
+        <div class="page3">
+            <section class="section1-page3">
+                <div class="contact-container">
+                    <h2 class="titre-contact">Contact</h2>
+                    <div class="form-container">
+                        <form class="form" action="get">
+                            <label class="label" for="mail">Email</label>
+                            <input class="input-form email" type="email" id="mail" placeholder="Email" autocomplete="none"></input>
+                            <textarea class="input-form textarea" name="message" id="" cols="30" rows="10" placeholder="Enter your text"></textarea>
+                            <input class="input-form submit" type="submit"></input>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer-page3">
+                <div class="footer-container">
+                    <script>document.getElementById("current-year").textContent = new Date().getFullYear();</script>
+                    <p class="info-footer">&copy; Buonomo Léa all right deserved.<span class="info-footer" id="current-year"></span></p>
+                </div>
+            </footer>
+        </div>
+    <!-- Fin du Grid principal -->
+    </div>
+</body>
+</html>
