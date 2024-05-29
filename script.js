@@ -1,21 +1,34 @@
-const mouse = document.querySelector('.slider');
+const slider = document.querySelector('.slider');
 const trail = document.querySelector('.trail');
- 
-mouse.addEventListener('mousemove', function(e) {
-  let x = e.pageX - this.offsetLeft;
-  let y = e.pageY - this.offsetTop;
- 
+
+
+function updateCursor(e) {
+  let x = e.pageX - slider.offsetLeft;
+  let y = e.pageY - slider.offsetTop;
+
   trail.style.left = x + 'px';
   trail.style.top = y + 'px';
-});
- 
-mouse.addEventListener('mouseleave', function() {
+}
+
+document.addEventListener('mousemove', updateCursor);
+
+slider.addEventListener('mouseleave', function() {
   trail.style.opacity = 0;
 });
- 
-mouse.addEventListener('mouseenter', function() {
+
+slider.addEventListener('mouseenter', function() {
   trail.style.opacity = 0.5;
 });
+
+
+
+
+const btnMode = document.getElementById('btnMode');
+
+btnMode.addEventListener('click', () => {
+  toggleDarkMode();
+});
+
 
 function toggleDarkMode() {
   const bodyElement = document.body;

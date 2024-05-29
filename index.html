@@ -9,11 +9,11 @@
 </head>
 <body>
     <div class="fond"></div>
-    <div class="fond2"></div>
-    <button class="btn-mode" onclick="toggleDarkMode()">Light mode</button>
+   
     <!-- Grid principal -->
     <div id="slider" class="slider">
         <div class="trail"></div>
+        <button type="button" id="btnMode" class="btn-mode">Light mode</button>
         <!-- Grid page 1 -->
         <div class="page1">
             <header class="header-page1">
@@ -36,10 +36,10 @@
                     </div>
                     <div class="liens-container">
                         <ul class="liens-ul">
-                            <li><a href="mailto:leabuonomo@hotmail.fr" title="Mail" target="_blank">Email</a></li>
-                            <li><a href="https://www.linkedin.com/in/l%C3%A9a-b-179849208/" title="Private LinkedIn" target="_blank">LinkedIn</a></li>
-                            <li><a href="https://codepen.io/Leyamagic1" title="Code Pen" target="_blank">CodePen</a></li>
-                            <li><a href="https://github.com/Leyamagic1" title="GitHub" target="_blank">GitHub</a></li>
+                            <li class="li1"><a rel="noopener" href="mailto:leabuonomo@hotmail.fr" title="Mail" target="_blank">Email</a></li>
+                            <li class="li2"><a rel="noopener" href="https://www.linkedin.com/in/l%C3%A9a-b-179849208/" title="Private LinkedIn" target="_blank">LinkedIn</a></li>
+                            <li class="li3"><a rel="noopener" href="https://codepen.io/Leyamagic1" title="Code Pen" target="_blank">CodePen</a></li>
+                            <li class="li4"><a rel="noopener" href="https://github.com/Leyamagic1" title="GitHub" target="_blank">GitHub</a></li>
                         </ul>
                     </div>
                 </div>
@@ -77,25 +77,33 @@
             </section>
             <section class="section2-page2">
                 <div class="projects-container">
-                    <div class="projet">
-                        <img class="img-projet" src="img/UI Design WebShop.png" width="350px" height="200px" title="Première slider-x page" alt="projet 1">
-                        <a href="https://codepen.io/Leyamagic1/pen/ZENQLrB" title="Code source projet 1" target="_blank">Voir le code source</a>
-                        <q class="citation">HTML/CSS/JS</q>
+                    <div class="projet projet1">
+                        <img class="img-projet" src="img/UI Design WebShop.png" width="300px" height="200px" title="Première slider-x page" alt="projet 1">
+                        <div class="projet-liens">
+                            <a rel="noopener" href="https://codepen.io/Leyamagic1/pen/ZENQLrB" title="Code source projet 1" target="_blank">Voir le code source</a>
+                            <q class="citation">HTML/CSS/JS</q>
+                        </div>
                     </div>
-                    <div class="projet">
-                        <img class="img-projet" src="img/Presentation Page.png" width="350px" height="200px" title="Premiere structure Grid Layout" alt="projet 2">
-                        <a href="https://codepen.io/Leyamagic1/pen/BaejpXy" title="Code source projet 2" target="_blank">Voir le code source</a>
-                        <q class="citation">HTML/CSS/JS</q>
+                    <div class="projet projet2">
+                        <img class="img-projet" src="img/Presentation Page.png" width="300px" height="200px" title="Premiere structure Grid Layout" alt="projet 2">
+                            <div class="projet-liens">
+                                <a rel="noopener" href="https://codepen.io/Leyamagic1/pen/BaejpXy" title="Code source projet 2" target="_blank">Voir le code source</a>
+                                <q class="citation">HTML/CSS/JS</q> 
+                            </div>
                     </div>
-                    <div class="projet">
-                        <img class="img-projet" src="img/jolie btn hover css.png" width="350px" height="200px" title="Idée de boutton:hover" alt="projet 3">
-                        <a href="https://codepen.io/Leyamagic1/pen/vYMYYzM" title="Code source projet 3" target="_blank">Voir le code source</a>
-                        <q class="citation">HTML/CSS</q>
+                    <div class="projet projet3">
+                        <img class="img-projet" src="img/jolie btn hover css.png" width="300px" height="200px" title="Idée de boutton:hover" alt="projet 3">
+                        <div class="projet-liens">
+                            <a rel="noopener" href="https://codepen.io/Leyamagic1/pen/vYMYYzM" title="Code source projet 3" target="_blank">Voir le code source</a>
+                            <q class="citation">HTML/CSS</q>
+                        </div>    
                     </div>
-                    <div class="projet">
-                        <img class="img-projet" src="img/Firsts Page SoundCloud darktheme.png" width="350px" height="200px" title="Premiere structure média queries" alt="projet 4">
-                        <a href="https://codepen.io/Leyamagic1/pen/LYoGWEg" title="Code source projet 4" target="_blank">Voir le code source</a>
-                        <q class="citation">HTML/CSS</Q>
+                    <div class="projet projet4">
+                        <img class="img-projet" src="img/Firsts Page SoundCloud darktheme.png" width="300px" height="200px" title="Premiere structure média queries" alt="projet 4">
+                        <div class="projet-liens">
+                            <a rel="noopener" href="https://codepen.io/Leyamagic1/pen/LYoGWEg" title="Code source projet 4" target="_blank">Voir le code source</a>
+                            <q class="citation">HTML/CSS</q>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -109,7 +117,7 @@
                         <form class="form" action="get">
                             <label class="label" for="mail">Email</label>
                             <input class="input-form email" type="email" id="mail" placeholder="Email" autocomplete="none"></input>
-                            <textarea class="input-form textarea" name="message" id="" cols="30" rows="10" placeholder="Enter your text"></textarea>
+                            <textarea class="input-form textarea" name="message" id="" cols="30" rows="5" placeholder="Enter your text"></textarea>
                             <input class="input-form submit" type="submit"></input>
                         </form>
                     </div>
